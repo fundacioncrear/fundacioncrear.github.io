@@ -39,7 +39,7 @@ const redireccionarOB= () =>{
 };
 
 const redireccionarHome = () =>{
-    window.location.href = "/html/juegos/logica/home.html";
+    window.location.href = "/html/juegos.html";
 };
 
 
