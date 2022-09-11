@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 * {
   margin: 0;
   padding: 0;
 
 }
 body {
-  font-family: 'Luckiest Guy', cursive;
-  background-color: rgb(233, 242, 207);
+  font-family: 'Silkscreen', cursive;
+  background-color: rgb(219, 207, 242);
   color: #111;
 }
 
@@ -24,16 +22,18 @@ body {
   transition: opacity 0.2s;
 }
 #play-again-btn {
+  background-color: #9061e7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(231, 214, 238);;
+  color: rgb(36, 31, 31);
   position: relative;
   top: -2.75rem;
   left: 50%;
   margin-left: -50px;
+  font-family: 'Silkscreen', cursive;
   font-size: 1rem;
   font-weight: bold;
-  color: #fff;
-  background-color: #111;
-	border: 5px double #fff; 
-	border-radius: 14px;
 	padding: 8px 10px;  
   outline: none;
   letter-spacing: .05em;
@@ -43,7 +43,7 @@ body {
   transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
 }
 #play-again-btn:hover {
-  background-color: #333;
+  background-color: #d94aec;
 }
 #play-again-btn:active {
   background-color: #555;
@@ -53,7 +53,6 @@ body {
   transform: translateX(6rem);
 }
 
-
 .draggable-items {
   float: left;
   flex: 2%;
@@ -62,8 +61,6 @@ body {
   transition: opacity 0.5s;
   
 }
-
-
 
 .draggable {
   height: 5rem;
@@ -79,14 +76,11 @@ body {
   border-style:dashed;
 }
 
-
-
 .matching-pairs {
   transition: opacity 0.5s;
   float: left;
   margin: 0.5rem 0.5rem;
 }
-
 
 .matching-pair {
   height: 5.1rem;
@@ -174,17 +168,19 @@ body {
 
 
 #regresar-btn {
+  background-color: #9061e7;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(231, 214, 238);
+  color: rgb(36, 31, 31);
   position: absolute;
   top: -0.5rem;
   margin: 7.5rem;
   left: 80%;
   margin-left: -30px;
+  font-family: 'Silkscreen', cursive;
   font-size: 1.85rem;
   font-weight: bold;
-  color: #fff;
-  background-color: #5f33b6;
-	border: 5px double #fff; 
-	border-radius: 14px;
 	padding: 8px 10px;  
   outline: none;
   letter-spacing: .05em;
@@ -192,7 +188,7 @@ body {
 
 }
 #regresar-btn:hover {
-  background-color: #45779b;
+  background-color: #d94aec;
 }
 #regresar-btn:active {
   background-color: #555;

@@ -6,37 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CREAR-CNN</title>
     <link rel="stylesheet" href="/css/juegos/matematicas/elementos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="/js/juegos/matematicas/elementos.js" defer></script>
     <h1>APRENDAMOS A CONTAR</h1>
     <style>
-        h1 {text-align: center; color:#5f33b6; margin: 2%; font-weight: bold; font-size: 2.85rem;}
+        h1 {text-align: center; color:#e971d9; margin: 2%; font-weight: bold; font-size: 4rem;}
         
     </style>
 </head>
 
 <body>
-    <a href="/html/juegos.html"><button id="regresar-btn">Regresar</button></a>
+    <a href="/html/juegos/matematicas/home.html"><button id="regresar-btn">REGRESAR</button></a>
     <section class="score">
       <span class="correct">0</span>/<span class="total">0</span>
-      <button id="play-again-btn">Juega de nuevo</button>
+      <button id="play-again-btn">JUGAR DE NUEVO</button>
     </section>
 
     <div id = tabla1>
-        <section class="matching-pairs">
-        <!-- Will be dynamically populated - Example Element: -->
-        <!-- <div class="matching-pair">
-          <span class="label">Codepen</span><span class="droppable" data-brand="codepen"></span>
-        </div> -->
-        </section>
+        <section class="matching-pairs"></section>
     </div>
 
     
     <div id = tabla2>
-        <section class="draggable-items">
-       <!-- Will be dynamically populated - Example Element: -->
-        <!-- <i class="fab fa-codepen draggable" draggable="true" style="color: #111111;" id="codepen"></i> -->
-        </section>
+        <section class="draggable-items"></section>
     </div>
     <script src="/js/juegos/puntajeUsuario.js"></script>
 </body>

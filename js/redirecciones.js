@@ -27,7 +27,6 @@ const redireccionarLogicaAnimales = () =>{
     window.location.href = "/html/juegos/logica/animales.html";
 };
 
-
 const redireccionarMemoria5 = () =>{
     window.location.href = "/html/juegos/logica/memoria.html";
 };
@@ -39,7 +38,7 @@ const redireccionarOB= () =>{
 };
 
 const redireccionarHome = () =>{
-    window.location.href = "/html/juegos.html";
+    window.location.href = "/html/juegos/logica/home.html";
 };
 
 

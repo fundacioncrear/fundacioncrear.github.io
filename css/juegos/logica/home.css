@@ -28,7 +28,6 @@ body {
 
 }
 
-
 .opcion {
     display: flex;
     justify-content: center;
@@ -49,4 +48,34 @@ body {
 
 .opcion:hover {
     background-color: rgba(142, 223, 89, 0.76);
+}
+
+#regresar-btn {
+    background-color: #23bb2f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(203, 226, 149);
+    color: rgb(36, 31, 31);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .05em;
+    margin: 4rem;
+    margin-right: -30px;
+    outline: none;
+    padding: 15px 25px;
+    position: absolute;
+    right: 750px;
+    top: 1000px;
+    text-decoration: none;
+    width: 300px;
+}
+
+#regresar-btn:hover {
+    background-color: #92f0c9;
+}
+
+#regresar-btn:active {
+    background-color: #555;
 }
