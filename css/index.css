@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+:root{
+    --bordes-color: rgb(175, 130, 46);
+    --titulo: 10em
+}
+
+body{
+    background-color: rgb(241, 222, 110);
+}
+
+.container {
+
+    text-align: center;
+
+}
+
+body {
+    overflow:hidden;
+}
+
+.container h1{
+    color: white;
+}
+
+
+.top {
+    background-color: var(--bordes-color);
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transition: 10s;
+}
+
+
+.top h1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: var(--titulo);
+}
+
+
+.bottom {
+    background-color: var(--bordes-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    transition: 10s;
+}
+
+.bottom h1{
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    font-size: var(--titulo);
+}
+
+
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.contenedor-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-form form h1{
+    color: black;
+}
+
+
+.form__group {
+    position: relative;
+    --color: #0000007e;
+}
+
+.form__input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #000000;
+    padding: .6em .3em;
+    border: none;
+    border-bottom: 1px solid var(--color);
+    background-color: transparent;
+}
+
+.form__input::placeholder{
+    color: black;
+}
+
+.form__label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+
+.form__input:focus + .form__label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: top left;
+    --color: #0a0a0a;
+}
+
+
+.form__button{
+    border: 10% 0% 10% 0%;
+    border-color: transparent;
+    background-color: rgb(236, 160, 19);
+    padding: 5%;
+}
+
+
+.circulo {
+    background-color: rgb(250, 245, 203);
+    border: 1px solid;
+    padding: 10%;
+    border-radius: 50%;
+    border-color: transparent;
+    background-image: url("/resource/img/animalito/1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}

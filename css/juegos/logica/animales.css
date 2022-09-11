@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background-color: rgb(233, 242, 207);
+  color: #111;
+}
+
+/*animalitos ordenados en filas*/
+.draggable-elements {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+
+.puntaje {
+  font-family: monospace;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  margin: 1.5rem;
+  position: relative;
+  transition: opacity 0.2s;
+}
+
+
+#juegadenuevo-btn {
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  margin-left: -30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5e6518;
+	border: 5px double #fff; 
+	border-radius: 14px;
+	padding: 8px 10px;  
+  outline: none;
+  letter-spacing: .05em;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
+}
+#juegadenuevo-btn:hover {
+  background-color: #8e9b25;
+}
+#juegadenuevo-btn:active {
+  background-color: #555;
+}
+#juegadenuevo-btn.juegadenuevo-btn-entrada {
+  opacity: 1;
+  transform: translateX(6rem);
+}
+
+.elementos-arrastrables {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem 1.5rem 1rem;
+  transition: opacity 0.5s;
+}
+
+/*animalitos*/
+.draggable {
+  height: 0.1rem;
+  width: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 4%;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+/*opacidad al mover los objetos al cuadro que corresponde*/
+.draggable:hover {
+  opacity: 1.2;
+}
+
+.pares-compatibles {
+  transition: opacity 0.5s;
+  height: 50vh;
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+/*diseño de texto de los animalitos*/
+.label {
+  position: absolute;
+  width: 13rem;
+  margin: 1%;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+/*Cuadros blancos donde se colocan los animalitos*/
+.droppable {
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  margin: 3.99rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 5rem;
+  background-color: #fff;
+  border: 3px dashed #111;
+  transition: border-width 0.2s, transform 0.2s, background-color 0.4s; 
+}
+
+
+/* Estilo relacionado con arrastrar y soltar */
+
+/*cuadro de despliegue flotante*/
+.droppable.droppable-hover {
+  border-width: 5px;
+  transform: scale(1.1);
+}
+
+/*cuadro de respuesta*/ 
+.droppable.dropped {
+  border-style: solid;
+  color: #fff;
+}
+
+
+/*sombra del animal al ser seleccionado*/
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+
+/*sombra del animal al pasar el mause (historial) */
+.draggable.dragged:hover {
+  opacity: 0.3;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 2px; }
+  #juegadenuevo-btn { top: -0.4rem; }
+  #juegadenuevo-btn.juegadenuevo-btn-entrada { transform: translateX(7rem); }
+  
+}
+
+#regresar-btn {
+  position: absolute;
+  top: -0.5rem;
+  margin: 4rem;
+  left: 85%;
+  margin-left: -30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5f33b6;
+	border: 5px double #fff; 
+	border-radius: 14px;
+	padding: 8px 10px;  
+  outline: none;
+  letter-spacing: .05em;
+  cursor: pointer;
+
+}
+#regresar-btn:hover {
+  background-color: #45779b;
+}
+#regresar-btn:active {
+  background-color: #555;
+}

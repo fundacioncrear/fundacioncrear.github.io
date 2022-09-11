@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CREAR-LOGICA</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="/css/juegos/logica/style.css">
+    <script src="/js/juegos/logica/main.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <h1>ROMPECABEZAS</h1>
+    <style>
+        h1 {text-align: center; color:#5f33b6; margin: 2.5%; font-weight: bold; font-size: 2.85rem;}
+    </style>
+</head>
+
+<body>
+
+  <section class="puntaje">
+    <div id='numero'><span>Ganados: </span></div>
+    <div id='clicks'><span>Clicks: </span>0</div>
+  </section>
+  <a href="/html/juegos.html"><button id="regresar-btn">Regresar</button></a>
+
+  <section class="draggable-items">
+        <div id='puz_box'>
+          <div id='puz'>
+            <i class='first' ondrop='drop(event)' ondragover='allowDrop(event)' ></i>
+            <i class='secon' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='third' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='fourt' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='fifth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='sixth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='seven' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='eight' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+            <i class='ninth' ondrop='drop(event)' ondragover='allowDrop(event)'></i>
+          </div>
+        <div id="container">
+          <div id='puzz'>
+            <div id ="fila2">
+            <i class='third' draggable='true' ondragstart='drag(event)'></i>
+            <i class='first' draggable='true' ondragstart='drag(event)'></i>
+            <i class='secon' draggable='true' ondragstart='drag(event)'></i>
+            <i class='eight' draggable='true' ondragstart='drag(event)'></i>
+            <i class='fifth' draggable='true' ondragstart='drag(event)'></i>
+            <i class='ninth' draggable='true' ondragstart='drag(event)'></i>
+            <i class='seven' draggable='true' ondragstart='drag(event)'></i>
+            <i class='fourt' draggable='true' ondragstart='drag(event)'></i>
+            <i class='sixth' draggable='true' ondragstart='drag(event)'></i>
+            </div>  
+          </div>
+        </div>
+          </div>
+    </section>  
+    <script src="/js/juegos/puntajeUsuario.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/juegos/matematicas/style.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>SUMA</title>
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <h2>OPERACIONES BÁSICAS</h2>
+        <nav>
+          <ul>
+            <li class="current"><a href="/html/juegos/matematicas/operaciones basicas/principal.html">SUMA</a></li>
+            <li><a href="/html/juegos/matematicas/operaciones basicas/resta.html">RESTA</a></li>
+            <li><a href="/html/juegos/matematicas/operaciones basicas/multiplicacion.html">MULTIPLICACIÓN</a></li>
+            <li><a href="/html/juegos.html">REGRESAR</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="wrapper">
+      <div class="equation">
+        <h1  id="num1" style="color:#FE4A49"></h1>
+        <h1 style="color: #2AB7CA;">+</h1>
+        <h1  id="num2" style="color: #FED766">1</h1>
+        <h1  style="color: #F86624">=</h1>
+        <h1  style="color: gray">?</h1>
+      </div>
+      <div class="answer-options">
+        <div class="options" style="background-color: #FE4A49;">
+          <h1 id="option1">1</h1>
+        </div>
+        <div class="options" style="background-color: #2AB7CA;">
+          <h1 id="option2">2</h1>
+        </div>
+        <div class="options" style="background-color: #FED766;">
+          <h1 id="option3">3</h1>
+        </div>
+      </div>
+  </div>
+
+  <script src="/js/juegos/matematicas/operaciones basicas/suma.js"></script>
+  <script src="/js/juegos/puntajeUsuario.js"></script>
+</body>
+</html>

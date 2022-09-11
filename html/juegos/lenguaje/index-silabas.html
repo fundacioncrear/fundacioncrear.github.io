@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CREAR-SILABAS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="/css/juegos/lenguaje/style-silabas.css">
+    <script src="/js/juegos/lenguaje/silabas.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <h1>ARRASTRA Y COMPLETA LAS SILABAS CORRECTA SEGUN CORRESPONDA</h1>
+    <style>
+        h1 {text-align: center; color:#5f33b6; margin: 2.5%; font-weight: bold; font-size: 2rem;}
+    </style>
+</head>
+
+<body>
+    <a href="/html/juegos.html"><button id="regresar-btn">Regresar</button></a>
+
+    <section class="score">
+      <span class="correct">0</span>/<span class="total">0</span>
+      <button id="play-again-btn">Jugar</button>
+    </section>
+    <div id = tabla1>
+        <section class="matching-pairs"></section>
+    </div>
+    
+    <div id = tabla2>
+        <section class="draggable-items"></section>
+    </div>
+
+    <script src="/js/juegos/puntajeUsuario.js"></script>
+
+</body>
+</html>

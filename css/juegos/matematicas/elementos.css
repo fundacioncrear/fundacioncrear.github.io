@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background-color: rgb(233, 242, 207);
+  color: #111;
+}
+
+
+.score {
+  font-family: monospace;
+  text-align: center;
+  left: 47%;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  margin: 0.5rem;
+  position: absolute;
+  transition: opacity 0.2s;
+}
+#play-again-btn {
+  position: relative;
+  top: -2.75rem;
+  left: 50%;
+  margin-left: -50px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #111;
+	border: 5px double #fff; 
+	border-radius: 14px;
+	padding: 8px 10px;  
+  outline: none;
+  letter-spacing: .05em;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
+}
+#play-again-btn:hover {
+  background-color: #333;
+}
+#play-again-btn:active {
+  background-color: #555;
+}
+#play-again-btn.play-again-btn-entrance {
+  opacity: 1;
+  transform: translateX(6rem);
+}
+
+
+.draggable-items {
+  float: left;
+  flex: 2%;
+  justify-content: center;
+  margin: 1.5rem ;
+  transition: opacity 0.5s;
+  
+}
+
+
+
+.draggable {
+  height: 5rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  cursor: move;
+  transition: opacity 0.2s;
+  background-color: #fff;
+  border-style:dashed;
+}
+
+
+
+.matching-pairs {
+  transition: opacity 0.5s;
+  float: left;
+  margin: 0.5rem 0.5rem;
+}
+
+
+.matching-pair {
+  height: 5.1rem;
+  width: 93rem;
+  margin: 1.2rem auto;
+  display: flex;
+}
+
+.matching-pair span {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  user-select: none;
+}
+
+.label {
+  margin-left: 0.5%;
+  font-size: 3.3rem;
+  text-align: right;
+}
+
+.droppable {
+  height: 5.5rem;
+  width: 6rem;
+  margin-left: 10%;
+  font-size: 2rem;
+  background-color: rgba(255, 255, 255, 0.618);
+  transition: 0.1s;
+}
+
+.droppable-hover {
+  background-color: #c6bef0;
+  transform: scale(1.1);
+}
+
+.dropped {
+  border-style: 2rem solid rgba(98, 211, 102, 0.618);
+}
+
+
+.dragged {
+  background-color: rgba(255, 255, 255, 0.618);
+  user-select: none;
+  opacity: 0.25;
+  cursor: default;
+}
+
+
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+@media (max-width: 600px) {
+  #play-again-btn { top: -0.4rem; }
+  #play-again-btn.play-again-btn-entrance { transform: translateX(7rem); }
+}
+
+/*fila de numeros a arrastrar*/
+#tabla1{
+  width: 30%; /*posicion x de la tabla*/
+  float: left;
+  margin-top: 160px;
+}
+
+#tabla2{
+  width: 50%;
+  float: left;
+  margin-top:20px;
+  
+}
+
+#draggable-items {
+  font-size: 34px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 125, 24);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+
+#regresar-btn {
+  position: absolute;
+  top: -0.5rem;
+  margin: 7.5rem;
+  left: 80%;
+  margin-left: -30px;
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5f33b6;
+	border: 5px double #fff; 
+	border-radius: 14px;
+	padding: 8px 10px;  
+  outline: none;
+  letter-spacing: .05em;
+  cursor: pointer;
+
+}
+#regresar-btn:hover {
+  background-color: #45779b;
+}
+#regresar-btn:active {
+  background-color: #555;
+}

@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    height: 100%;
+    background: #FCE8AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inicial img{
+    display: block;
+    margin-left: 180px;
+    width: 50%
+    
+}
+
+
+
+
+
+.juego img{
+    display: block;
+    margin-left: 100xp;
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 50px;
+
+}
+
+
+
+
+.help img{
+    display: block;
+    margin-left: 25px;
+    width: 145%;
+ }
+
+.final img{
+    display: block;
+    margin-left: 180px;
+    width: 50%
+}
+
+
+
+
+section{
+    height: 50%;
+    width: 820px;
+    background-color: #FFA841;
+    border: 3px solid #FF8A00;
+    color: black;
+    padding: 60px;
+    border-radius: 100px;
+}
+#palabra{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+
+}
+.letra{
+    height: 50px;
+    width: 50px;
+    border: 5px solid #FF8A00;
+    background: #FCE8AE;
+    text-align: center;
+    margin: 6px;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.pintar{
+    background-color: #FF8A00;;
+}
+.pintarError{
+    background-color: red;
+}
+
+
+button{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: transparent;
+    border: 4px solid #FF8A00;
+    border-radius: 20px;
+    color: rgb(63, 1, 1);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #FCE8AE;
+}
+
+
+
+#inicial{
+    display: block;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#juego{
+    display: none;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+#final{
+    display: none;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.boton{
+    margin-bottom:20px;
+    display: block;
+    position: relative;
+    margin-left: 170px;
+    width: 50%
+
+
+
+}
+
+
+.ayuda1{
+    width: 300px;
+    height: 300px;
+    margin-bottom:20px;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0;
+
+}
+
+.ayuda{
+    width: 200px;
+    height: 200px;
+    margin-bottom:20px;
+    display: inline-block;
+    position: relative;
+    left: 60px;
+    top: 0;
+}
+
+.help{
+    display: flex;
+    
+}
+.ayuda0{
+    width: 300px;
+    height: 300px; 
+    display:flex;
+    
+}
+
+h2{
+    border-bottom: 4px solid #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 40px;
+    font-family: fantasy;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+
+h3{
+    margin: 25px 0;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: centera;
+}
+h3 span{
+    font-style: italic;
+}
+h4{
+    border-bottom: 4px solid #fff;
+    text-align: center;
+    padding-bottom: 5px;
+    color: black;
+    font-size: 20px;
+    font: oblique bold 100% cursive;
+}
+
+h7{
+    text-align: center;
+    padding-bottom: 5px;
+    font: oblique bold 120% cursive;
+    font-size: 40px;
+
+    color: black;
+}
+
+h5{
+    text-align: center;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+    border: 3px solid #FF8A00;
+    font: oblique bold 130% cursive;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+.logo img{
+    display: block;
+    margin-left: 100xp;  
+    width: 15%;
+
+}
+
+
+h6{
+   display: none;
+}

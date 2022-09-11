@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+
+body {
+    background-color: rgb(238, 164, 95);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.titulo {
+    position: absolute;
+    font-size: 4em;
+    top: 10%;
+
+}
+
+
+.opcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 212, 56);
+    width: 50%;
+    height: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    border-radius: 5%;
+}
+
+.opcion span {
+    font-weight: bold;
+    font-size: 5em;
+}
+
+.opcion:hover {
+    background-color: rgba(197, 97, 97, 0.76);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/juegos/lenguaje/adiAnimal.css">
+    <title>ADIVINAZA</title>
+</head>
+<body>
+    <section>
+        <button id="nuevo" class="nuevo" type="button" onClick="redireccionarHome()">Regresar</button>
+        <div id="inicial" class="inicial">
+            <img src="/resource/img/animals/logo.png" alt="" id="imginicio" class="inicio">
+            <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+        </div>
+
+
+        <div id="juego" class="juego">
+            <div id="logo" class="logo">
+            <h2>Adivina el Animal</h2>
+            </div>
+            <h7> Cual es el nombre de este animal </h7>
+        <div id="palabra">
+            <div class="letra pintar">E</div>
+            <div class="letra">L</div>
+            <div class="letra">E</div>
+            <div class="letra">F</div>
+            <div class="letra">A</div>
+            <div class="letra">N</div>
+            <div class="letra">T</div>
+            <div class="letra">E</div>
+        </div>
+        <div  class="help">
+        <div class="ayuda0">
+            <img src="/resource/img/animals/ELEFANTE.png" alt="" id="imagen", class="imagen">
+        </div>
+        <div class="ayuda">
+            <h6>Ayuda: <span id="ayud"> </span> </h6>
+            <h6>Intentos restantes: <span id="intentos"></span></h6>
+            <h6>Letras ingresada: <span id="letrasIngresadas"></span></h6>
+        </div>
+        <div class="ayuda1">
+            <h4>Opciones</h4>
+            <h5> <span id="opcion" class="opcion"> Elefante</span> </h5>
+            <h5> <span id="opcion1" class="opcion"> Elefante</span> </h5>
+            <h5> <span id="opcion2" class="opcion"> Elefante</span> </h5>
+        </div>
+        </div>
+            <div class="boton">
+            <button onclick="cargarNuevaPalabra()">Nueva Palabra</button>
+            <button onclick="terminarJuego()">Terminar</button>
+            </div>
+        </div>
+        <div id="final" class="final">
+            <h4>PRECIONA "ARRIBA" PARA VOLVER AL MENU PRINCIPAL</h4>
+            <img src="/resource/img/animals/logo.png" alt="" id="imgfinal" class="final">
+            <h4>FELICIDADES DESEAS VOLVER A JUGAR PRECIONA "VOLVER A JUGAR"</h4>
+            <button onclick="volverAlInicio()">VOLVER A JUGAR</button>
+        
+       </div>
+       <h1></h1>
+    </section>
+    <script src="/js/juegos/lenguaje/adiAnimales.js"></script>
+    <script src="/js/juegos/puntajeUsuario.js"></script>
+    <script src="/js/redirecciones.js"></script>
+
+</body>
+</html>
