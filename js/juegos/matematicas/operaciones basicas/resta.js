@@ -45,6 +45,7 @@ option1.addEventListener("click", function(){
   if(option1.innerHTML == answer){
     generate_equation();
     winAudio.play();
+    againAudio.play();
     swal({
       position: 'top-end',
       icon: 'success',
@@ -64,6 +65,7 @@ option2.addEventListener("click", function(){
   if(option2.innerHTML == answer){
     generate_equation();
     winAudio.play();
+    againAudio.play();
     swal({
       position: 'top-end',
       icon: 'success',
@@ -83,6 +85,7 @@ option3.addEventListener("click", function(){
   if(option3.innerHTML == answer){
     generate_equation();
     winAudio.play();
+    againAudio.play();
     swal({
       position: 'top-end',
       icon: 'success',
