@@ -2,7 +2,7 @@ let cartasDestapadas = 0;
 let temporizador = false;
 let pares = 0;
 let timerInicial = 180;
-let timer = 120;
+let timer = 200;
 let puntaje = 0;
 let movimientos = 0;
 let mostrarTiempo = document.getElementById('restante');
@@ -23,10 +23,35 @@ let wrongAudio = new Audio('/sound/incorrecto.wav');
 let numeros =[1,1,2,2,3,3,4,4,5,5,9,9,7,7,8,8];
 numeros = numeros.sort(function(){return Math.random() -0.3})
 
+for (let i = 0; i <= 15; i++) {
+    let tarjeta = document.getElementById(i);
+    tarjeta.innerHTML = `<img src="/resource/img/animalito/${numeros[i]}.png" alt=" ">`;
+    tarjeta.disabled = true;
+
+    }
+    
+setTimeout(() => {
+    
+    for (let i = 0; i <= 15; i++) {
+        let cartillas = document.getElementById(i);
+        cartillas.innerHTML = ' ';
+        cartillas.disabled = false;
+
+    }
+    contarTiempo();
+
+}, 5000);
+
+
 function contarTiempo(){
     tiempoRegresivo = setInterval(()=>{
         mostrarTiempo.innerHTML = `Tiempo: ${timer} segundos`;
+        if (pares<8) {
         timer--;
+        }else{
+        mostrarTiempo.innerHTML = `¡fantastico! tardaste solo: ${timerInicial - timer} segundos`;
+
+        }
         if(timer < 0){
             clearInterval(tiempoRegresivo);
             bloquearTarjetas(numeros);
@@ -101,7 +126,6 @@ function girar(id){
         winAudio.play();
         updateScoreUser();
         clearInterval(tiempoRegresivo);
-        mostrarTiempo.innerHTML = `fantastico! solo demoraste ${timerInicial - timer} segundos`;
         mostrarPuntaje.innerHTML = `puntaje: ${puntaje}`;
         mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}`;
     }
