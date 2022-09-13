@@ -1,61 +1,91 @@
 const animales = [
     {
-      iconName: "cat",
+      iconName: "🐈",
       Nombre: "Gato",
-      color: "#36a2eb"
+
     },
   
     {
-      iconName: "dove",
-      Nombre: "Paloma",
-      color: "#808080"
+      iconName: "🐕",
+      Nombre: "Perro",
+ 
     },
     {
-      iconName: "hippo",
-      Nombre: "Hipopótamo",
-      color: "#ff9f40"
+      iconName: "🐀",
+      Nombre: "Rata",
+ 
+    },
+    {
+      iconName: "🐘",
+      Nombre: "Elefante",
+ 
+    },
+    {
+      iconName: "🐄",
+      Nombre: "Vaca",
+ 
+    },
+    {
+      iconName: "🦘",
+      Nombre: "Canguro",
+ 
+    },
+    {
+      iconName: "🐿️",
+      Nombre: "Ardilla",
+ 
+    },
+    {
+      iconName: "🐍",
+      Nombre: "Serpiente",
+  
     },
   
     {
-      iconName: "horse",
+      iconName: "🐎",
       Nombre: "Caballo",
-      color: "#804000"
+
     },
     {
-      iconName: "spider",
+      iconName: "🕷️",
       Nombre: "Araña",
-      color: "#0000FF"
     },
     {
-      iconName: "frog",
+      iconName: "🐸",
       Nombre: "Rana",
-      color: "#4bc0c0"
     },
     {
-      iconName: "crow",
-      Nombre:"Cuervo",
-      color: "#111111"
+      iconName: "🐑",
+      Nombre:"Oveja",
     },
     {
-      iconName: "bug",
-      Nombre:"Pulga",
-      color: "#5e2129"
+      iconName: "🐺",
+      Nombre:"Lobo",
     },
     {
-      iconName: "piggy-bank",
+      iconName: "🦝",
+      Nombre:"Mapache",
+    },
+    {
+      iconName: "🐷",
       Nombre:"Cerdo",
-      color: "#ff6384"
     },
   
     {
-      iconName: "otter",
-      Nombre:"Nutria",
-      color: "#8D4925"
+      iconName: "🐒",
+      Nombre:"Mono",
     },
     {
-      iconName: "fish",
+      iconName: "🐬",
+      Nombre:"Delfín",
+    },
+    {
+      iconName: "🐧",
+      Nombre:"Pinguino",
+    },
+    {
+      iconName: "🐠",
       Nombre:"Pez",
-      color: "#9966ff" 
     }
   
   
@@ -94,10 +124,14 @@ const animales = [
     // Crear "elementos arrastrables" y agregarlos al DOM
     for(let i=0; i<randomDraggableBrands.length; i++) {
       Elementos_Arrastrables.insertAdjacentHTML("beforeend", `
-        <i class="fas fa-${randomDraggableBrands[i].iconName} draggable" draggable="true" style="color: ${randomDraggableBrands[i].color};" id="${randomDraggableBrands[i].iconName}"></i>
+        <i class="draggable" draggable="true" id="${randomDraggableBrands[i].iconName}">${randomDraggableBrands[i].iconName}</i>
       `);
     }
+    //<i class="draggable" draggable="true" id="${randomDraggableBrands[i].iconName2}">${randomDraggableBrands[i].iconName2}</i>
     
+
+
+
     // Crear "pares coincidentes" y agregar a DOM
     for(let i=0; i<alphabeticallySortedRandomDroppableBrands.length; i++) {
       Pares_compatibles.insertAdjacentHTML("beforeend", `
@@ -165,7 +199,7 @@ const animales = [
       event.target.classList.add("dropped");
       draggableElement.classList.add("dragged");
       draggableElement.setAttribute("draggable", "false");
-      event.target.innerHTML = `<i class="fas fa-${Elemento_Arrastrable_animales}" style="color: ${draggableElement.style.color};"></i>`;
+      event.target.innerHTML = `<i class="draggable">${Elemento_Arrastrable_animales}</i>`;
       correcto++;  
       winAudio.play();
     }
