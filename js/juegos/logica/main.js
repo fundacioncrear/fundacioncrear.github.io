@@ -5,16 +5,17 @@
   let clickAudio = new Audio("/sound/click.wav");
 
 var img = [
-  "/resource/img/buhok.png",
-  "/resource/img/cacatua.png",
-  "/resource/img/conejo.png",
-  "/resource/img/gatocaja.png",
-  "/resource/img/gatocool.png",
-  "/resource/img/gatocupcake.png",
-  "/resource/img/gatoperro.png",
-  "/resource/img/nutrias.png"
+  "/resource/buhok.png",
+  "/resource/cacatua.png",
+  "/resource/conejo.png",
+  "/resource/gatocaja.png",
+  "/resource/gatocool.png",
+  "/resource/gatocupcake.png",
+  "/resource/gatoperro.png",
+  "/resource/nutrias.png"
 
 ]
+
 
 var texto = "Clicks: ";
 var texto2 = "Ganados: "; 
